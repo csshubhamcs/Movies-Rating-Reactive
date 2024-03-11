@@ -19,7 +19,9 @@ public class ReviewRouter {
         return route()
                 .nest(path("v1/review"), builder ->{    // this the way of nested when two api path are same in one
                     builder.POST("", reviewHandler::createReview)
-                            .GET("", reviewHandler::getReviews);
+                            .GET("", reviewHandler::getReviews)
+                            .PUT("{id}", reviewHandler::updateReview)
+                            .DELETE("{id}", reviewHandler::deleteReview);
                 })
 //                .POST("", reviewHandler::createReview)
 //                .GET("", reviewHandler::getReviews)
