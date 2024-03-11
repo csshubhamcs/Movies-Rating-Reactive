@@ -1,2 +1,4 @@
 rootProject.name = 'Movies-Rating-Reactive'
-
+include 'movies-info-service'
+include 'movies-review-service'
+include 'movies-service'
