@@ -1,6 +1,5 @@
 package com.moviesservices.moviesinfoservice.util;
 
-
 import com.moviesservices.moviesinfoservice.domain.MovieInfo;
 import com.moviesservices.moviesinfoservice.dto.MovieInfoDto;
 import org.springframework.beans.BeanUtils;

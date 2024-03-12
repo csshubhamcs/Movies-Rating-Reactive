@@ -1,6 +1,5 @@
 package com.moviesservices.moviesinfoservice.controller;
 
-
 import com.moviesservices.moviesinfoservice.dto.MovieInfoDto;
 import com.moviesservices.moviesinfoservice.service.MovieInfoService;
 import jakarta.validation.Valid;

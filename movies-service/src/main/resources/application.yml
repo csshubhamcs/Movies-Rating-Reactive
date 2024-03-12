@@ -1,0 +1,9 @@
+spring:
+  profile:
+    active: local
+restClient:
+  moviesInfoUrl: http://localhost:9091/v1/movieInfos
+  reviewUrl: http://localhost:9092/v1//review
+
+server:
+  port: 9093

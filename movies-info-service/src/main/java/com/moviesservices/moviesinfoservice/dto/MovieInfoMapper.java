@@ -1,6 +1,5 @@
 package com.moviesservices.moviesinfoservice.dto;
 
-
 import com.moviesservices.moviesinfoservice.domain.MovieInfo;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

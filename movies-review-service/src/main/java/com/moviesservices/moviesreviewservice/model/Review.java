@@ -1,6 +1,5 @@
 package com.moviesservices.moviesreviewservice.model;
 
-
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -15,11 +14,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 public class Review {
 
-    @Id
-    private String reviewId;
-    @NotNull(message = "movieInfoId cannot be null")
-    private Long movieInfoId;
-    private String comment;
-    @Min(value = 0L, message = "rating.negative: please pass a non-negative value")
-    private Double rating;
+  @Id private String reviewId;
+
+  @NotNull(message = "movieInfoId cannot be null")
+  private Long movieInfoId;
+
+  private String comment;
+
+  @Min(value = 0L, message = "rating.negative: please pass a non-negative value")
+  private Double rating;
 }
